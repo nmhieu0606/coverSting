@@ -1,20 +1,19 @@
 <template>
     <div>
         <!-- Modal toggle -->
+        <div class="relative mx-auto">
+            <form class="max-w-sm mx-auto absolute right-0">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                    message</label>
+                <textarea v-on:change="test" v-model="chuoi" id="message" rows="4"
+                    class=" p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
 
-        <form class="max-w-sm mx-auto">
-            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                message</label>
-            <textarea v-on:change="test" v-model="chuoi" id="message" rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Write your thoughts here..."></textarea>
-
-            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
-                message</label>
-            <textarea @click="copyPixCodeClick" v-model="chuoi2" id="message" rows="4"
-                class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                placeholder="Write your thoughts here..."></textarea>
-        </form>
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                    message</label>
+                <textarea @click="copyPixCodeClick" v-model="chuoi2" id="message" rows="4"
+                    class=" p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
+            </form>
+        </div>
     </div>
 </template>
 <script setup>
@@ -34,7 +33,7 @@
         navigator.clipboard.writeText(chuoi2.value);
         const Toast = Swal.mixin({
             toast: true,
-            position: "top-end",
+            position: "top-center",
             showConfirmButton: false,
             timer: 3000,
             timerProgressBar: true,
