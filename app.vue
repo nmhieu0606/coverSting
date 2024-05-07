@@ -57,7 +57,7 @@
         str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
         str = str.replace(/O|Ó|Ò|Ỏ|Õ|Ọ|Ô|Ố|Ồ|Ổ|Ỗ|Ộ|Ơ|Ớ|Ờ|Ỡ|Ở|Ợ/g, "O");
         str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
-        str = str.replace(/U|Ú|Ù|Ủ|Ũ|Ụ|Ư|Ứ|Ừ|Ữ|Ự/g, "U");
+        str = str.replace(/U|Ú|Ù|Ủ|Ử|Ũ|Ụ|Ư|Ứ|Ừ|Ữ|Ự/g, "U");
         str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
         str = str.replace(/Y|Ý|Ỳ|Ỹ|Ỵ/g, "Y");
         str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
