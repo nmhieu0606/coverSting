@@ -51,7 +51,7 @@
     function toNonAccentVietnamese(str) {
         str = str.replace(/A|Á|À|Ả|Ã|Ạ|Â|Ấ|Ầ|Ẫ|Ậ|Ẩ|Ă|Ắ|Ẳ|Ằ|Ẵ|Ặ/g, "A");
         str = str.replace(/à|a|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
-        str = str.replace(/E|É|È|Ẽ|Ẹ|Ê|Ệ|Ế|Ề|Ễ|Ể|Ệ/g, "E");
+        str = str.replace(/E|É|È|Ẻ|Ẽ|Ẹ|Ê|Ệ|Ế|Ề|Ễ|Ể|Ệ/g, "E");
         str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
         str = str.replace(/I|Í|Ì|Ĩ|Ị/g, "I");
         str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
